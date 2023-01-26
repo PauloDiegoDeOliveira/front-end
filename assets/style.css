@@ -22,6 +22,9 @@ uma coleção de itens que não trazem uma ordenação numérica e as suas posi�
 
 /* LI - É usado para representar um item que faz parte de uma lista. */
 
+/* A - O elemento âncora HTML <a>, é usado para definir os hiperlinks e âncoras.
+Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo termo âncora HTML quando os elementos <a> define um endereço dentro de um documento. */
+
 #menu ul {
     /* Estabelece a largura máxima de um elemento. */
     max-width: 800px;
