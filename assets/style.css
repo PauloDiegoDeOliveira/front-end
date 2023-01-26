@@ -112,9 +112,14 @@ footer {
     /* O atributo "height " especifica a altura de uma imagem, em pixels.*/
     height: 60px;
 
+    /* A propriedade display CSS define se um elemento é tratado como um bloco ou elemento inline (en-US) e o layout
+    usado para seus filhos, como layout de fluxo (en-US), grid ou flex. Formalmente, a propriedade display define os tipos de exibição internos e externos de um elemento.*/
     display: flex;
 
+    /* A propriedade CSS align-items estabelece o valor align-self em todos filhos diretos como um grupo.
+    A propriedade align-self estabelece o alinhamento de um certo item dentro do bloco que o contém. */
     align-items: center;
 
+    /* A propriedade justify-content (en-US) é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction */
     justify-content: center;
 }
