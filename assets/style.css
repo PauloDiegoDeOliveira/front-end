@@ -8,8 +8,16 @@
     /* box-sizing é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos. */
     box-sizing: border-box;
 
-    /* font-family do CSS permite que se faça uma lista de prioridades de familias de fontes e/ou nomes genéricos de famílias a serem especificados para um elemento selecionado. */
+    /* Font-family do CSS permite que se faça uma lista de prioridades de familias de fontes
+    e/ou nomes genéricos de famílias a serem especificados para um elemento selecionado. Se não encontrar a primeira fonte, usa a segunda. */
     font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsivo de acordo com o tamanho da tela */
+@media only screen and (max-width: 600px) and (min-width:500px) {
+    body {
+        background-color: red;
+    }
 }
 
 #menu {
@@ -25,11 +33,14 @@ uma coleção de itens que não trazem uma ordenação numérica e as suas posi�
 /* A - O elemento âncora HTML <a>, é usado para definir os hiperlinks e âncoras.
 Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo termo âncora HTML quando os elementos <a> define um endereço dentro de um documento. */
 
+/* # - Capturar o ID */
+
 #menu ul {
     /* Estabelece a largura máxima de um elemento. */
     max-width: 800px;
 
-    /* Maneira abreviada de se escrever uma só declaração para duas das propriedades para listas:*/
+    /* Maneira abreviada de se escrever uma só declaração para duas das propriedades para listas. */
+    /* "None" não quero decoração padrão */
     list-style: none;
 
     /* Padding / Preenchimento - Define a distância entre o conteúdo de um elemento e suas bordas. */
@@ -38,6 +49,7 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
 
 #menu ul li {
     /* Permite que você defina a maneira como determinado elemento HTML deve ser renderizado. */
+    /* Exibir conteúdos em linha */
     display: inline;
 }
 
@@ -53,31 +65,33 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
 
     /* usada para definir a formatação de underline , overline , line-through ou blink.
     As decorações underline e overline são posicionadas abaixo e acima do texto (respectivamente), e line-through cortando-o.
-    A propriedade text-decoration desenha em elementos descendentes. */
+    A propriedade text-decoration desenha em elementos descendentes.     
+    /* "None" não quero decoração padrão */
     text-decoration: none;
 
     /* Poderoso recurso para a criação de efeitos de animação nos elementos HTML. */
-    transition: background .4s;
+    /*Qualquer transição que eu fizer tera um delay 0.4 milisegundos */
+    transition: background 0.4s;
 }
 
+/* Hover - Alteração só vai acontecer quando estiver com o mouse em cima do item. */
 #menu ul li a:hover {
     /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
-    background-color: #075ebd;
+    background-color: pink;
+    color: red
 }
 
+/* Last-child - Ultimo elemento "Filho" da minha lista. */
 #menu ul li:last-child a {
     /* É uma propriedade CSS que usamos para posicionar algo na tela, seja um elemento em bloco ou em linha. */
     float: right;
 
     /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
-    background-color: #075ebd;
+    background-color: black;
 }
 
 footer {
     text-align: center;
-
-    /* Padding / Preenchimento - Define a distância entre o conteúdo de um elemento e suas bordas. */
-    padding: 10px;
 
     /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
     background-color: #075ebd;
@@ -89,11 +103,18 @@ footer {
     position: absolute;
 
     /* Através do atributo bottom é possível definir a posição vertical do elemento em relação a sua borda inferior. */
-    bottom: 0;
+    /* Define a posição a partir do fundo do elemento. */
+    bottom: 0px;
 
     /* O atributo "width" especifica a largura de uma imagem, em pixels.  */
     width: 100%;
 
     /* O atributo "height " especifica a altura de uma imagem, em pixels.*/
-    height: 2.5rem;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
 }
