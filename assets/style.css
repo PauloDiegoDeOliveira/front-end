@@ -78,7 +78,7 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
 #menu ul li a:hover {
     /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
     background-color: #3292f9;
-    color: #FFF
+    color: #FAEE20
 }
 
 /* Last-child - Ultimo elemento "Filho" da minha lista. */
