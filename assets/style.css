@@ -77,8 +77,8 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
 /* Hover - Alteração só vai acontecer quando estiver com o mouse em cima do item. */
 #menu ul li a:hover {
     /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
-    background-color: pink;
-    color: red
+    background-color: #3292f9;
+    color: #FFF
 }
 
 /* Last-child - Ultimo elemento "Filho" da minha lista. */
@@ -87,7 +87,7 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
     float: right;
 
     /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
-    background-color: black;
+    background-color: #075ebd;
 }
 
 footer {
