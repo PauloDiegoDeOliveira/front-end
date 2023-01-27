@@ -51,6 +51,8 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
 
     /* Padding / Preenchimento - Define a distância entre o conteúdo de um elemento e suas bordas. */
     padding: 0;
+
+    width: 100%;
 }
 
 .menu__item {
@@ -92,11 +94,11 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
     /* É uma propriedade CSS que usamos para posicionar algo na tela, seja um elemento em bloco ou em linha. */
     float: right;
 
-    /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
-    background-color: #075ebd;
+    /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. Para destacar a cor */
+    /* background-color: #075ebd; */
 }
 
-footer {
+.footer {
     /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
     background-color: #075ebd;
 
