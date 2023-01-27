@@ -135,6 +135,25 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
     height: 500px;
 }
 
+.lista-cards {
+    background-color: grey;
+    list-style-type: none;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    
+
+}
+
+.card {
+    background-color: #3689e2;
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+}
+
 .footer {
     /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
     background-color: #075ebd;
