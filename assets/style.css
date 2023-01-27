@@ -26,6 +26,11 @@ main {
     justify-content: center;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .menu {
     /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
     background-color: #075ebd;
@@ -129,20 +134,22 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
 }
 
 .container-cards {
-    background-color: #FAEE20;
+    /* background-color: #FAEE20; */
     width: 100%;
     max-width: 1235px;
     height: 500px;
 }
 
 .lista-cards {
-    background-color: grey;
+    /* background-color: grey; */
     list-style-type: none;
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0px;
+    max-width: 1000px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -150,6 +157,8 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
     width: 200px;
     height: 300px;
     margin: 15px;
+    display: inline-block;
+    border-radius: 5px;
 }
 
 .footer {
@@ -160,7 +169,7 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
     color: #FFF;
 
     /* A propriedade position define a posição de um elemento na página HTML */
-    /* position: fixed; */
+    position: absolute;
 
     /* Através do atributo bottom é possível definir a posição vertical do elemento em relação a sua borda inferior. */
     /* Define a posição a partir do fundo do elemento. */
@@ -184,4 +193,8 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
 
     /* A propriedade justify-content (en-US) é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction */
     justify-content: center;
+
+    flex-grow: 0;
+
+    flex-basis: auto;
 }
