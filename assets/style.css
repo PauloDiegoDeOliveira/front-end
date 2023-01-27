@@ -143,7 +143,7 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
     color: #FFF;
 
     /* A propriedade position define a posição de um elemento na página HTML */
-    position: absolute;
+    /* position: fixed; */
 
     /* Através do atributo bottom é possível definir a posição vertical do elemento em relação a sua borda inferior. */
     /* Define a posição a partir do fundo do elemento. */
