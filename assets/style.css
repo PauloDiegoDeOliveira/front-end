@@ -20,15 +20,29 @@
     }
 }
 
-.menu__logo {
-    margin-left: 10px;
-    width: 120px;
+main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .menu {
     /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. */
     background-color: #075ebd;
     display: flex;
+}
+
+.menu__logo {
+    margin-left: 10px;
+    width: 120px;
+    cursor: pointer;
+    display: flex;
+}
+
+.menu__img {
+    margin-left: 10px;
+    width: 120px;
+    cursor: pointer;
 }
 
 /* UL - O elemento HTML <ul> (ou elemento HTML de Lista desordenada) representa uma lista de itens sem ordem rígida, isto é,
@@ -61,6 +75,15 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
     display: inline;
 }
 
+/* Last-child - Ultimo elemento "Filho" da minha lista. */
+.menu__item:last-child a {
+    /* É uma propriedade CSS que usamos para posicionar algo na tela, seja um elemento em bloco ou em linha. */
+    float: right;
+
+    /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. Para destacar a cor */
+    /* background-color: #075ebd; */
+}
+
 .menu__link {
     /* Utilizada para definir a cor do texto de um elemento HTML */
     color: #FFF;
@@ -89,13 +112,27 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
     color: #FAEE20
 }
 
-/* Last-child - Ultimo elemento "Filho" da minha lista. */
-.menu__item:last-child a {
-    /* É uma propriedade CSS que usamos para posicionar algo na tela, seja um elemento em bloco ou em linha. */
-    float: right;
+.container-body {
+    height: 100%;
+    display: inline-block;
+}
 
-    /* Alterar a cor do plano de fundo, seja de um elemento ou do documento como um todo. Para destacar a cor */
-    /* background-color: #075ebd; */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-cards {
+    background-color: #FAEE20;
+    width: 100%;
+    max-width: 1235px;
+    height: 500px;
 }
 
 .footer {
