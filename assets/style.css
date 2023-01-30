@@ -21,9 +21,9 @@
 }
 
 main {
-    display: flex;
+    /* display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 body {
@@ -119,25 +119,25 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
 
 .container-body {
     height: 100%;
+    width: 100%;
     display: inline-block;
 }
 
 .banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
 .banner__img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 .container-cards {
     /* background-color: #FAEE20; */
-    width: 100%;
-    max-width: 1235px;
-    height: 500px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lista-cards {
@@ -169,7 +169,7 @@ Nós usaremos o termo HTML link quando os pontos <a> elemento a um recurso, eo t
     color: #FFF;
 
     /* A propriedade position define a posição de um elemento na página HTML */
-    position: absolute;
+    /* position: absolute; */
 
     /* Através do atributo bottom é possível definir a posição vertical do elemento em relação a sua borda inferior. */
     /* Define a posição a partir do fundo do elemento. */
