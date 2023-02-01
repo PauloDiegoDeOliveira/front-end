@@ -1,2 +1,1 @@
-# front-end
-Front-end básico com HTML, CSS e JavaScript
+Este projeto eu estou produzindo para aprender HTML, CSS, JS e consumo de APIS.
