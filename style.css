@@ -122,13 +122,14 @@ a {
     background: transparent;
 }
 
-.box a .fast {
+.box a .fas {
     color: #1daf;
     font-size: 18px;
 }
 
+/* Sobrescrever uma outra classe que está afetando o comportamento */
 .icone-pesquisa {
-    color: #075ebd;
+    color: #075ebd !important;
 }
 
 .lista-cards {
