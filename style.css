@@ -18,6 +18,16 @@ a {
     text-decoration: none;
 }
 
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
 .navbar {
     min-height: 70px;
     display: flex;
@@ -76,7 +86,7 @@ a {
 }
 
 .container-body {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     display: inline-block;
 }
@@ -203,7 +213,6 @@ a {
 .footer {
     background-color: #075ebd;
     color: #FFF;
-    bottom: 0px;
     width: 100%;
     padding: 20px;
     display: flex;
@@ -211,6 +220,7 @@ a {
     justify-content: center;
     flex-grow: 0;
     flex-basis: auto;
+    text-align: center;
 }
 
 @media (max-width:768px) {
