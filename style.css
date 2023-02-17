@@ -102,6 +102,7 @@ main {
 
 .container-cards {
     /* background-color: #FAEE20; */
+    margin: auto;
     width: 80%;
     display: flex;
     align-items: center;
