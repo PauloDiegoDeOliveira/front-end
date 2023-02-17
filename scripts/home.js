@@ -27,7 +27,7 @@ function GeradorCard(resultado) {
     elementoCardContainer.innerHTML = "";
     resultado.forEach(element => {
         elementoCardContainer.innerHTML += `<li class="card">
-        <img class="img-produto" src="${element.caminhoAbsoluto}" alt="">
+        <img class="img-produto" src="${element.uploads[0].caminhoAbsoluto}" alt="">
         <div class="card__textos">
             <h2 class="titulo-produto">${element.nome}</h2>
             <p class="descricao-produto">${element.descricao}</p>

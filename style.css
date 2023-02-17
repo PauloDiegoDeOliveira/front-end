@@ -132,6 +132,10 @@ main {
     background: transparent;
 }
 
+.box input:focus {
+    width: 400px;
+}
+
 .box a .fas {
     color: #1daf;
     font-size: 18px;
