@@ -47,46 +47,41 @@
     </header>
 
     <main>
+        <button type="button" class="button blue mobile" id="cadastrarProduto">Cadastrar produto</button>
         <div class="container-body">
             <div class="container-cards">
-
-                <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar produto</button>
                 <table class="records">
                     <thead>
                         <tr>
                             <th>Nome</th>
-                            <th>E-mail</th>
-                            <th>Celular</th>
-                            <th>Cidade</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
                             <th>Ação</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Maria</td>
-                            <td>maria@gmail.com</td>
-                            <td>(11) 97165-1111</td>
-                            <td>Anapolis</td>
+                            <td>Memória</td>
+                            <td>Memória</td>
+                            <td>R$ 199,99</td>
                             <td>
                                 <button type="button" class="button green">editar</button>
                                 <button type="button" class="button red">excluir</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>João Pedro</td>
-                            <td>joao@gmail.com</td>
-                            <td>(11) 97165-2222</td>
-                            <td>Jandira</td>
+                            <td>Memória</td>
+                            <td>Memória</td>
+                            <td>R$ 199,99</td>
                             <td>
                                 <button type="button" class="button green">editar</button>
                                 <button type="button" class="button red">excluir</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Jose da Silva</td>
-                            <td>jose@gmail.com</td>
-                            <td>(11) 97165-3333</td>
-                            <td>São Roque</td>
+                            <td>Memória</td>
+                            <td>Memória</td>
+                            <td>R$ 199,99</td>
                             <td>
                                 <button type="button" class="button green">editar</button>
                                 <button type="button" class="button red">excluir</button>
@@ -98,14 +93,13 @@
                 <div class="modal" id="modal">
                     <div class="modal-content">
                         <header class="modal-header">
-                            <h2>Novo Cliente</h2>
+                            <h2>Novo produto</h2>
                             <span class="modal-close" id="modalClose">&#10006;</span>
                         </header>
                         <form class="modal-form">
-                            <input type="text" class="modal-field" placeholder="Nome do Cliente">
-                            <input type="email" class="modal-field" placeholder="e-mail do Cliente">
-                            <input type="text" class="modal-field" placeholder="Celular do Cliente">
-                            <input type="text" class="modal-field" placeholder="Cidade do Cliente">
+                            <input type="text" class="modal-field" placeholder="Nome do produto">
+                            <input type="email" class="modal-field" placeholder="Descrição do produto">
+                            <input type="text" class="modal-field" placeholder="Valor do produto">
                         </form>
                         <footer class="modal-footer">
                             <button class="button green">Salvar</button>

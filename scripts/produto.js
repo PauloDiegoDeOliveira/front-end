@@ -64,7 +64,7 @@ const openModal = () => document.getElementById('modal')
 const closeModal = () => document.getElementById('modal')
     .classList.remove('active')
 
-document.getElementById('cadastrarCliente')
+document.getElementById('cadastrarProduto')
     .addEventListener('click', openModal)
 
 document.getElementById('modalClose')
