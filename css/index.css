@@ -42,9 +42,10 @@ main {
 }
 
 .logo__img {
-    margin-left: 10px;
+    /* margin-left: 10px; */
     width: 120px;
     cursor: pointer;
+    display: flex;
 }
 
 .nav-menu {
