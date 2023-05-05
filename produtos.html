@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIP - Universidade Paulista</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/produto.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="scripts/produto.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" type="img" href="https://www.unip.br">
+                <img class="logo__img" src="/image/logo.svg" title="UNIP" alt="logo">
+            </a>
+
+            <ul class="nav-menu">
+
+                <div class="box">
+                    <input id="buscar" type="text" placeholder="Buscar...">
+                    <a href="#">
+                        <i class="fas fa-search icone-pesquisa"></i>
+                    </a>
+                </div>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="https://www.unip.br/universidade/sobre_ead.aspx"
+                        class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="https://www.unip.br/atendimento/" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-body">
+            <div class="container-cards">
+                <button type="button" class="button blue mobile" id="cadastrarProduto">Cadastrar produto</button>
+                <table class="records">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Memória</td>
+                            <td>Memória</td>
+                            <td>R$ 199,99</td>
+                            <td>
+                                <button type="button" class="button green">editar</button>
+                                <button type="button" class="button red">excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Memória</td>
+                            <td>Memória</td>
+                            <td>R$ 199,99</td>
+                            <td>
+                                <button type="button" class="button green">editar</button>
+                                <button type="button" class="button red">excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Memória</td>
+                            <td>Memória</td>
+                            <td>R$ 199,99</td>
+                            <td>
+                                <button type="button" class="button green">editar</button>
+                                <button type="button" class="button red">excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <header class="modal-header">
+                            <h2>Novo produto</h2>
+                            <span class="modal-close" id="modalClose">&#10006;</span>
+                        </header>
+                        <form class="modal-form">
+                            <input type="text" class="modal-field" placeholder="Nome do produto">
+                            <input type="email" class="modal-field" placeholder="Descrição do produto">
+                            <input type="text" class="modal-field" placeholder="Valor do produto">
+                        </form>
+                        <footer class="modal-footer">
+                            <button class="button green">Salvar</button>
+                            <button class="button blue">Cancelar</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright © 1997-2023 UNIP - Universidade Paulista. Todos os direitos reservados. Política de Privacidade
+            e
+            Termos de Uso</p>
+    </footer>
+
+    <script src="scripts/produto.js"></script>
+</body>
+
+</html>

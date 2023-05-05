@@ -1,80 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNIP - Universidade Paulista</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
 
-    <!-- Navbar -->
-    <nav class="menu">
-        <a class="menu__logo" type="img" href="https://www.unip.br">
-            <img class="menu__img" src="https://www.unip.br/assets/img/logo/logo-unip-2021.svg" title="UNIP"
-                alt="unip logo">
-        </a>
-        <ul class="menu__navbar">
-            <li class="menu__item"><a class="menu__link" href="https://www.unip.br">Home</a></li>
-            <li class="menu__item"><a class="menu__link"
-                    href="https://www.unip.br/universidade/objetivos.aspx">Objetivos</a></li>
-            <li class="menu__item"><a class="menu__link" href="https://www.unip.br/atendimento/">Atendimento</a></li>
-            <li class="menu__item"><a class="menu__link" href="https://www.unip.br/universidade/sobre_ead.aspx">Sobre
-                    EaD</a></li>
-            <li class="menu__item"><a class="menu__link" href="https://unip.br/aluno/central/">Área do(a) Aluno(a)</a>
-            </li>
-        </ul>
-    </nav>
+            <a class="logo" type="img" href="https://www.unip.br">
+                <img class="logo__img" src="/image/logo.svg" title="UNIP" alt="logo">
+            </a>
+
+            <ul class="nav-menu">
+
+                <div class="box">
+                    <input id="buscar" type="text" placeholder="Buscar...">
+                    <a href="#">
+                        <i class="fas fa-search icone-pesquisa"></i>
+                    </a>
+                </div>
+                <li class="nav-item"><a href="https://www.unip.br" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="https://www.unip.br/universidade/sobre_ead.aspx"
+                        class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="https://www.unip.br/atendimento/" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
     <main>
-
         <div class="banner">
-            <img class="banner__img"
-                src="https://api.unip.br/Sistemas/banner/Arquivos/2023/01/12/2d5e9dbf-2fad-47d6-bed5-0419dfb551bb.png"
-                title="Banner" alt="banner">
+            <img class="banner__img" src="/image/banner.png" title="Banner" alt="banner">
         </div>
 
         <div class="container-body">
             <div class="container-cards">
-
-                <ul class="lista-cards">
-                    <li class="card">
-
-                        <img class="img-produto" src="" alt="">
-
-                        <div class="card__textos">
-                            <h2 class="titulo-produto">Produto</h2>
-
-                            <p class="descricao-produto">Descriçãoooooooooooo Descrição Descrição
-                                Descrição
-                                Descrição
-                                Descrição
-                                Descrição
-                                Descrição
-                                Descrição
-                                Descrição</p>
-
-                            <p class="quantidade-produto">Quantidade: 01</p>
-
-                            <p class="valor-produto">Valor: R$ 100,00</p>
-                        </div>
-                    </li>
-
+                <ul id="CardContainerId" class="lista-cards">
                 </ul>
             </div>
         </div>
-
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>Copyright © 1997-2023 UNIP - Universidade Paulista. Todos os direitos reservados. Política de Privacidade e
+        <p>Copyright © 1997-2023 UNIP - Universidade Paulista. Todos os direitos reservados. Política de Privacidade
+            e
             Termos de Uso</p>
     </footer>
 
+    <script src="scripts/services.js"></script>
+    <script src="scripts/home.js"></script>
 </body>
 
 </html>
